@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $("#b1").click(function () {
+          $("img").before("<b>Adding text before the Image</b>");
+        });
+
+        $("#b2").click(function () {
+          $("img").after("Adding text after the Image");
+        });
+
+        $("#b3").click(function () {
+          $(".p1").before("<b>Text Adding front paragraph</b>");
+        });
+
+        $("#b4").click(function () {
+          $(".p1").after("Text after the paragraph");
+        });
+      });
+    </script>
+    <title>After Before in JQuery</title>
+  </head>
+  <body>
+    <p>
+      after() and before () method is used to add information after of before
+      the specific element
+    </p>
+
+    <img
+      src="https://c4.wallpaperflare.com/wallpaper/295/163/719/anime-anime-boys-picture-in-picture-kimetsu-no-yaiba-kamado-tanjir%C5%8D-hd-wallpaper-preview.jpg"
+      alt="Jquery"
+      width="100"
+      height="70"
+    />
+    <br />
+    <p class="p1">___________</p>
+    <button id="b1">Adding text before the Image</button>
+    <button id="b2">Adding text after the Image</button>
+    <button id="b3">Adding text before the paragraph</button>
+    <button id="b4">Adding text after the paragraph</button>
+
+    <p>
+      <b
+        ><q
+          >Conclusion: In text it add new line after and before then add before
+          and after</q
+        ></b
+      >
+    </p>
+  </body>
+</html>
