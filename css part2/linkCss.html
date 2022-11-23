@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Link In CSS</title>
+    <style>
+      a:link {
+        color: yellow;
+      }
+      a:visited {
+        color: blue;
+      }
+      a:hover {
+        color: black;
+      }
+      a:active {
+        color: red;
+      }
+
+      a:link,
+      a:visited {
+        background-color: dodgerblue;
+        color: hotpink;
+        padding: 10px 20px;
+        text-align: left;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Link in Css</h1>
+    <p>
+      There are four states in Links namely:
+      <i>a:link, a:visited, a:hover, a:active</i>
+    </p>
+
+    <h2>a:link</h2>
+    <p>a:link is used for a normal unvisited link</p>
+    <p>
+      <b><a href="https://google.com" target="_blank">Styling Link</a></b>
+    </p>
+    <p>
+      <b>Reminder:</b> a:hover cannot come before a:link and a:visited in css
+      for complete proper working
+    </p>
+    <p>
+      <b>Reminder:</b> a:active must follow a:hover property in CSS for complete
+      working
+    </p>
+    <hr />
+    <a href="google.com" target="_blank">This is a Link Button.</a>
+  </body>
+</html>

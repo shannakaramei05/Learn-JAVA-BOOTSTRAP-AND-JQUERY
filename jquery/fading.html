@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $("button").click(function () {
+          $("#1").fadeIn(1000);
+          $("#2").fadeIn(5000);
+          $("#3").fadeIn(7000);
+        });
+      });
+    </script>
+    <title>Fading In HTML</title>
+  </head>
+  <body>
+    <p>Applying FadeIn effect on each box with different timing.</p>
+    <button>Hit the button to get the fading effect</button><br /><br />
+    <div
+      id="1"
+      style="width: 40px; height: 60px; display: none; background-color: brown"
+    ></div>
+    <br />
+    <div
+      id="2"
+      style="width: 40px; height: 60px; display: none; background-color: yellow"
+    ></div>
+    <br />
+    <div
+      id="3"
+      style="width: 40px; height: 60px; display: none; background-color: orange"
+    ></div>
+  </body>
+</html>

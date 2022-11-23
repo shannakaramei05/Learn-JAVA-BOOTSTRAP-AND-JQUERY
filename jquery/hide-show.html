@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $("#btn-hide").click(function () {
+          $(".a").hide(3000);
+        });
+        $("#btn-show").click(function () {
+          $(".a").show(5000);
+        });
+      });
+    </script>
+    <title>Hide Show JQuery</title>
+  </head>
+  <body>
+    <button id="btn-hide">Hide</button>
+    <h1 class="a">The Hidden Heading</h1>
+    <p class="a">
+      These paragraphs and the single heading will hide 3 seconds after:
+    </p>
+    <p class="a">A user clicks on the button</p>
+    <button id="btn-show">Show</button>
+  </body>
+</html>

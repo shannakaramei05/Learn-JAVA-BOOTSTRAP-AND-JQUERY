@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $("#flip").click(function () {
+          $("#qq").slideDown("fast");
+        });
+
+        $("#flip").click(function () {
+          $("#panel").slideUp("slow");
+        });
+      });
+    </script>
+    <style>
+      #panel,
+      #flip,
+      #qq {
+        padding: 10px;
+        text-align: 10px;
+        background-color: dodgerblue;
+        border: solid 5px purple;
+      }
+      #panel {
+        padding: 60px;
+      }
+      #qq {
+        padding: 30px;
+        display: none;
+      }
+    </style>
+    <title>Sliding in JQuery</title>
+  </head>
+  <body>
+    <div id="flip">When this area is clicked, a panel emerges.</div>
+    <div id="panel">The panel greets the user with Merry Chirstmas!</div>
+    <div id="qq">This will appear</div>
+  </body>
+</html>

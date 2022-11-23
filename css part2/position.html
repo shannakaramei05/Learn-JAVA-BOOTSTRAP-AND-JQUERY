@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position</title>
+    <style>
+      div.s {
+        position: static;
+        border: 3px solid blue;
+      }
+      div.rel {
+        position: relative;
+        right: 10px;
+        border: 3px solid red;
+      }
+      div.fx {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 200px;
+        border: 5px solid blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Static Example</h2>
+    <p>
+      by default all elemens are static. Elements which are static are not
+      disrupted by the left, right, top and bottom properties
+    </p>
+    <div class="s">This is an Example of static example</div>
+    <hr />
+    <h2>Relative Example</h2>
+    <p>
+      relative is used with an element then it is placed to its position. if you
+      use the left, right, top, and bottom properties with it, then the element
+      would be disrupted and displaced from its position
+    </p>
+    <div class="rel">This text positioned as relative.</div>
+    <hr />
+
+    <h2>Fixed</h2>
+    <p>
+      fixed position, then element is placed relative with respect to the
+      viewport.
+    </p>
+    <div class="fx">This element has a fixed property.</div>
+    <hr />
+    <h2>absolute Example</h2>
+    <p>
+      An absolute position is that in which the element is placed with respect
+      to the closet placed ancestor.
+    </p>
+  </body>
+</html>

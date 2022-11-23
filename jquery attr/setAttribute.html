@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $("#b1").click(function () {
+          alert("will change paragraph 1 to 'Hi User!!'");
+          $("#par1").text("hi user!");
+        });
+        $("#b2").click(function () {
+          alert("Change Paragraph 2 To bold Hi USER!");
+          $("#par2").html("<b>Hi User!</b>");
+        });
+        $("#b3").click(function () {
+          alert("value inside input will change to Shane");
+          $("#par3").val("Shane");
+        });
+      });
+    </script>
+    <title>Set Content and Attributes</title>
+  </head>
+  <body>
+    <p id="par1">This is our first paragraph</p>
+    <p id="par2">This is our second paragprah</p>
+    <p>Input Field: <input type="text" id="par3" value="Rick" /></p>
+    <button id="b1">Setting any textual Information</button>
+    <button id="b2">Setting any HTML data</button>
+    <button id="b3">Setting any value</button>
+  </body>
+</html>

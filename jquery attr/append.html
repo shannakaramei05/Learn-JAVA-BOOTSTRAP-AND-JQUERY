@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $("#b1").click(function () {
+          $("p").append("<b>NEW CONTENT HERE </b>");
+        });
+        $("#b2").click(function () {
+          $("ul").append("<li>Soup</li>");
+        });
+        $("#b3").click(function () {
+          $("p").prepend("<b>New Word</b> ");
+        });
+        $("#b4").click(function () {
+          $("#prepend").prepend("<li>Hot Dog</li>");
+        });
+      });
+      function appTxt() {
+        var textOne = "<b>Using HTML to generate Text</b>";
+        var textTwo = $("<p></p>").text("Using JQuery to generate Text");
+        var textThree = document.createElement("p");
+        textThree.innerHTML = "Some content";
+        $("body").append(textOne, textTwo, textThree);
+      }
+    </script>
+    <title>Addition Element</title>
+  </head>
+  <body>
+    <h2>APPEND</h2>
+    <p>This is the first paragraph.</p>
+    <p>This is the second paragraph.</p>
+    <ul>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Water</li>
+    </ul>
+    <button id="b1">Append content at the end of paragraph.</button>
+    <button id="b2">Append item at the end of the list.</button>
+
+    <hr />
+    <h2>PREPEND</h2>
+    <ol id="prepend">
+      <li>Pizza</li>
+      <li>Burger</li>
+      <li>Sandwich</li>
+    </ol>
+    <button id="b3">prepend content at the end of paragraph</button>
+    <button id="b4">prepend item at the end of the list</button>
+    <hr />
+    <h2>APPEND TEXT</h2>
+    <button id="appTxt" onclick="appTxt()">Append Text</button>
+  </body>
+</html>

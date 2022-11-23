@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $("#flip").click(function () {
+          $("#panel").slideDown(2000);
+        });
+        $("#stop").click(function () {
+          $("#panel").stop();
+        });
+      });
+    </script>
+    <style>
+      #panel,
+      #flip {
+        padding: 3px;
+        font-size: 50px;
+        text-align: left;
+        background-color: green;
+        color: black;
+        border: solid 1px #666;
+      }
+      #panel {
+        padding: 20px;
+        display: none;
+      }
+    </style>
+    <title>Stopping Animation</title>
+  </head>
+  <body>
+    <button id="stop">Pause the slidding effect</button>
+    <div id="flip">Hit this area for slidding down the panel.</div>
+    <div id="panel">Hello User!</div>
+  </body>
+</html>

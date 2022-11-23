@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $("h1,h2,h3").dblclick(function () {
+          $(this).hide();
+        });
+      });
+    </script>
+    <title>Double Click JQuery</title>
+  </head>
+  <body>
+    <p>
+      this time, a single click is not enough. You have to double-click a
+      heading to hide it.!
+    </p>
+    <h1>First Heading</h1>
+    <h2>Second Heading</h2>
+    <h3>Third Heading</h3>
+  </body>
+</html>

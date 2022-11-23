@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $("button").click(function () {
+          $(".a").toggle();
+        });
+      });
+    </script>
+    <title>Toggle JQuery</title>
+  </head>
+  <body>
+    <button>Hide or Show HTML elements by using this Toggle Button!</button>
+    <h1 class="a">Toggle Example</h1>
+    <p class="a">Whenever, the toggle button is hit,</p>
+    <p class="a">it would hide and show the paragraphs</p>
+  </body>
+</html>
