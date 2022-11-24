@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $("#show").click(function () {
+          alert("Background color p1= " + $("#p1").css("background-color"));
+          alert("Background color p2= " + $("#p2").css("background-color"));
+          alert("Background color p3= " + $("#p3").css("background-color"));
+        });
+
+        $("#change-color").click(function () {
+          $("#p1").css("background-color", "red");
+          $("#p2").css("background-color", "brown");
+          $("#p3").css("background-color", "purple");
+        });
+      });
+    </script>
+    <title>Trying add CSS Using JQuery</title>
+  </head>
+  <body>
+    <h2>This is heading</h2>
+    <p id="p1" style="background-color: dodgerblue">
+      This is the first paragraph.
+    </p>
+
+    <p id="p2" style="background-color: orange">
+      This is the second paragraph.
+    </p>
+
+    <p id="p3" style="background-color: yellow">This is the third paragraph</p>
+
+    <button id="show">Show the background color of each paragraph</button>
+    <button id="change-color">
+      Adjust The background color of the paragraphs.
+    </button>
+  </body>
+</html>

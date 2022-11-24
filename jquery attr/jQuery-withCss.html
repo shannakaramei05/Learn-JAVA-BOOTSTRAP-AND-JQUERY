@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $("#b1").click(function () {
+          $("h1,p").addClass("green");
+          $("div").addClass("size");
+        });
+
+        $("#b2").click(function () {
+          $("h1,p").removeClass("green");
+          $("div").removeClass("size");
+        });
+
+        $("#b3").click(function () {
+          $("h1,p").toggleClass("green");
+        });
+      });
+    </script>
+    <style>
+      .size {
+        font-size: xx-small;
+      }
+      .green {
+        color: green;
+      }
+    </style>
+    <title>Jquery with CSS</title>
+  </head>
+  <body>
+    <h1>This is the first heading!</h1>
+    <h2>This is the second heading!</h2>
+    <p>This is the first paragraph</p>
+    <p>This is the second paragraph.</p>
+    <div>This is a piece of vital information.</div>
+    <br />
+    <button id="b1">Push clasess in elements</button>
+    <button id="b2">Delete clasess in elements</button>
+    <button id="b3">Toggle Btn swap add and remove class</button>
+  </body>
+</html>

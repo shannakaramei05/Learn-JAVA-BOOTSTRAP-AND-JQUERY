@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $("#btn-del").click(function () {
+          $("#d").remove();
+        });
+        $("#btn-p").click(function () {
+          $("p").remove(".b");
+        });
+        $("#btn-empty").click(function () {
+          $("#d").empty();
+        });
+      });
+    </script>
+    <title>Deleting Element</title>
+  </head>
+  <body>
+    <p>
+      For Deleting Element we use remove() function from JQuery. this function
+      deletes the child elements of those elements.
+    </p>
+    <div
+      id="d"
+      style="
+        height: 500px;
+        width: 500px;
+        border: 3px solid green;
+        background: orange;
+      "
+    >
+      We are using div element in our example.
+      <p>A button is used for the deleting.</p>
+      <p>The Button calls out the remove() method to delete the element.</p>
+    </div>
+    <br />
+    <button id="btn-del">Delete the div element from the page.</button>
+    <hr />
+    <p class="a">This is the first paragprah</p>
+    <p class="b">This is the second paragraph</p>
+    <p class="b">this is the third paragraph</p>
+    <br />
+    <button id="btn-p">Remove all p element with class="test"</button>
+    <hr />
+    <h3>EMPTY</h3>
+    <button id="btn-empty">Delete the div element from the page.</button>
+  </body>
+</html>
