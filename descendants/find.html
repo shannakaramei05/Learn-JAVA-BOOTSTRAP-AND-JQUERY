@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $("div").find("span").css({ color: "blue", border: "3px solid blue" });
+      });
+    </script>
+    <style>
+      .innermost * {
+        display: block;
+        border: 3px solid green;
+        color: lightgreen;
+        padding: 6px;
+        margin: 18px;
+      }
+    </style>
+    <title>Find() Jquery</title>
+  </head>
+  <body>
+    <div class="innermost" style="width: 300px">
+      div (current element)
+      <p>
+        p (child)
+        <span>span (grandchild)</span>
+      </p>
+      <p>
+        p (child)
+        <span>span (grandchild)</span>
+      </p>
+    </div>
+  </body>
+</html>

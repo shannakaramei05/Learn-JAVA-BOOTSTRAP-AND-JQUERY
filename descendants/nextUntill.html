@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $("h2")
+          .nextUntil("h4")
+          .css({ color: "blue", border: "3px solid blue" });
+      });
+    </script>
+    <style>
+      .s * {
+        display: block;
+        border: 3px solid green;
+        color: green;
+        padding: 6px;
+        margin: 18px;
+      }
+    </style>
+    <title>NextUntill() jquery</title>
+  </head>
+  <body class="s">
+    <div>
+      div (parent)
+      <p>p</p>
+      <span>span</span>
+      <h2>h2</h2>
+      <h3>h3</h3>
+      <p>p</p>
+      <h4>h4</h4>
+      <p>p</p>
+      <p>p</p>
+    </div>
+  </body>
+</html>

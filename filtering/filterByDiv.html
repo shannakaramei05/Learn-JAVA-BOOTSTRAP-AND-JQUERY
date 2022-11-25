@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      div {
+        border: 3px solid blue;
+      }
+    </style>
+    <script>
+      $(document).ready(function () {
+        $("div").first().css({ "background-color": "lightgreen" }); //first div
+        $("div").last().css({ "background-color": "red" }); //last div
+        $("div").eq(2).css({ "background-color": "pink" }); // based on index div
+      });
+    </script>
+    <title>first() JQuery</title>
+  </head>
+  <body>
+    <h1>How to User First Method for Transvering?</h1>
+    <p>This paragraph does not belong to any div element</p>
+    <div>
+      <p>This is the first paragraph in this div.</p>
+      <p>This is the second paragraph in this div.</p>
+    </div>
+    <br />
+    <div>
+      <p>this is the first paragraph in this div.</p>
+      <p>this is the second paragraph in this div.</p>
+    </div>
+    <br />
+    <div>
+      <p>this is the first paragraph in this div</p>
+      <p>this is the second paragraph in this div</p>
+    </div>
+    <br />
+    <div>
+      <p>this is the first paragraph in this div.</p>
+      <p>this is the second paragraph in this div.</p>
+    </div>
+  </body>
+</html>
