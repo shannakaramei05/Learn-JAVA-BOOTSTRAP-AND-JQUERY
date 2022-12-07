@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/
+bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.
+js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#searchbtn").click(function () {
+          alert(
+            "Search button is clicked. Value of Search Text is " +
+              $("#searchtxt").val() +
+              " Category : " +
+              $("#categorysel").children(":selected").html()
+          );
+          console.log($("#categorysel").children(":selected").html());
+        });
+      });
+    </script>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1
+      /css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/
+      iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <title>MYEShop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body style="background-color: #a2e9ff">
+    <div class="container">
+      <h1 style="text-align: center">Welcome to MyEShop</h1>
+      <p style="text-align: center">
+        Buy Any Product you Like at Reasonable Price
+      </p>
+      <table>
+        <tr>
+          <td>
+            <img
+              src="https://th.bing.com/th/id/OIP.qUgPkoOk5rYdXKtBE5o_-AHaJX?pid=ImgDet&rs=1"
+              alt="Logo"
+              width="50px"
+              height="50px"
+            />
+          </td>
+          <td>
+            <form>
+              <input id="searchtxt" type="text" placeholder="Search.." />
+            </form>
+          </td>
+          <td>
+            <select id="categorysel">
+              <option>ALL</option>
+              <option>CLOTHES</option>
+              <option>FOOD AND BEVERAGES</option>
+              <option>HEALTH & BEAUTY</option>
+              <option>SPORTS & LEISURE</option>
+              <option>BOOKS & ENTERTAIMENTS</option>
+            </select>
+          </td>
+          <td><button id="searchbtn">Serach</button></td>
+          <td>
+            <span><i>[ 0 ] Items in your cart</i></span>
+          </td>
+          <td>
+            <a
+              href="home.html"
+              class=""
+              style="
+                background-color: red;
+                color: white;
+                padding: 1em 1.5em;
+                text-decoration: none;
+                text-transform: uppercase;
+              "
+              >Home</a
+            >
+          </td>
+          <td><a href="specialoffers.html">Special Offers</a></td>
+          <td><a href="contact.html">Contact</a></td>
+          <td><a href="login.html">Login</a></td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
